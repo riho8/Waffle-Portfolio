@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html charset=UTF-8">
+  
+	<title>Riho Shimaoka</title>
+  
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+
+	<!--My CSS-->
+	<link rel="stylesheet" type="text/css" href="../css/waffle.css">
+
+	<!-- Bootstrap JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+	<!-- My JavaScript-->
+	<script src="../script.js" defer></script>
+
+	<!-- Font family -->
+
+</head>
+<body>
+	<!-- HEADER-->
+	<header class="header">
+        <div class="container">
+            <div class="content">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container-fluid">
+					  <a class="navbar-brand" href="/">Riho</a>
+					  <i id="weather" class="" data-bs-toggle="tooltip" data-bs-html="true" title="東京の今日の天気<br>"></i>
+					  <button class="navbar-toggler" type="button"
+							data-toggle="collapse"
+							data-target="#navbarNav"
+							aria-controls="navbarNav"
+							aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+					  <div class="collapse navbar-collapse justify-content-end" id="navbarNav" >
+						<ul class="navbar-nav">
+							<li class="nav-item">
+							  <a class="nav-link active" aria-current="page" href="#">Works</a>
+							</li>
+						  <li class="nav-item">
+							<a class="nav-link" href="/about">About</a>
+						  </li>
+						</ul>
+					  </div>
+					</div>
+				  </nav>
+            </div>
+        </div>
+    </header>
+	<!-- // HEADER -->
+	<!-- WORKS-->
+	<div class="works">
+		<div class="container">
+            <div class="content">
+				<div class="heading">
+					<nav class="navbar navbar-expand-lg navbar-light">
+						<div class="container-fluid">
+						  <div class="collapse navbar-collapse justify-content-center" id="navbarNav" >
+							<ul class="navbar-nav">
+							  <li class="nav-item">
+								<a class="nav-link" href="/works/waffle">waffle</a>
+							  </li>
+							  <li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">42</a>
+							  </li>
+							  <li class="nav-item">
+								<a class="nav-link" href="/works/playground">playground</a>
+							  </li>
+							</ul>
+						  </div>
+						</div>
+					  </nav>
+				</div>
+				<div class="description">
+					<blockquote class="voice-item">
+						<p>
+							2022年7月より、エンジニア養成機関<a href="https://42tokyo.jp/">42 Tokyo</a>
+							でコンピューターサイエンスを学んでいます。<br>
+							以下は課題で制作しました。
+						</p>
+					  </blockquote>
+				</div>
+				<div class="list">
+					<div class="list-item">
+						<a href= "#" class="display" data-bs-toggle="modal" data-bs-target="#exampleModal1" >
+						<img src="../images/libft.jpg" class="image">
+						<span>C</span>
+						<div class="text">
+							<p>標準Cライブラリの再実装</p>
+						</div>
+						</a>
+						
+						<!-- モーダルの設定 -->
+						<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel">
+							<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+								<h1 class="modal-title fs-5" id="exampleModalLabel">libft</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="閉じる"></button>
+								</div>
+								<div class="modal-body">
+									<h5>概要</h5>
+									<p>標準Cライブラリを再実装する課題です。strlen,memcopyなどベーシックな関数から、文字列を分割する関数など計37の関数を実装しました。</p>
+									<a href="https://github.com/riho8/libft-0x" target="_blank">Git Hub</a>
+									<h5><br>学んだことなど</h5>
+									<ul>
+										<li>基礎的なC言語の文法や、Makefileの文法などを学びました。</li>
+										<li>メモリを扱う関数が多かったため、メモリリークやセグメンテーションフォルトに注意しつつメモリ領域の確保・解放を行うのが難しかったです。mallocやfreeの扱い方が身についたと思います。</li>
+									</ul>
+								</div>
+							</div>
+							</div>
+						</div><!-- /.modal -->
+						
+					</div>
+					<div class="list-item">
+						<a href= "#" class="display" data-bs-toggle="modal" data-bs-target="#exampleModal2" >
+						<img src="../images/printf.jpg" class="image">
+						<span>C</span>
+						<div class="text">
+							<p>printfの再実装</p>
+						</div>
+						</a>
+						
+						<!-- モーダルの設定 -->
+						<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel">
+							<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+								<h1 class="modal-title fs-5" id="exampleModalLabel">ft_printf</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="閉じる"></button>
+								</div>
+								<div class="modal-body">
+									<h5>概要</h5>
+									<p>C言語で文字列を表示する関数printfを再実装する課題です。フォーマット指定子に対応しました。</p>
+									<h5><br>学んだことなど</h5>
+									<ul>
+										<li>可変長引数を扱うので、va_系の関数の使い方を学びました。</li>
+										<li>指定子ごとにファイルを分けたり、機能ごとに関数を分けて読みやすいプログラムにしました。</li>
+									</ul>
+								</div>
+							</div>
+							</div>
+						</div><!-- /.modal -->
+						
+					</div>   
+					<div class="list-item">
+						<a href= "#" class="display" data-bs-toggle="modal" data-bs-target="#exampleModal3" >
+						<img src="../images/gnl.jpg" class="image">
+						<span>C</span>
+						<div class="text">
+							<p>ファイルから1行ずつ文字列を読み込む関数の実装</p>
+						</div>
+						</a>
+						
+						<!-- モーダルの設定 -->
+						<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel">
+							<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+								<h1 class="modal-title fs-5" id="exampleModalLabel">get_next_line</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="閉じる"></button>
+								</div>
+								<div class="modal-body">
+									<h5>概要</h5>
+									<p>ファイルから1行ずつ文字列を読み込む関数を実装しました。指定されたバッファサイズ分ファイルディスクリプタから読み込み、改行を読み込むとそこまでの文字列をリターンします。</p>
+									<h5><br>学んだことなど</h5>
+									<ul>
+										<li>ファイルディスクリプタ、open,read,close関数などの理解が深まりました。</li>
+										<li>読み込んだ文字列を保存するため、static変数の使い方を学びました。</li>
+										<li>サブ関数でメモリ確保などに失敗したとき、メイン関数でmallocで確保したメモリを確実にfreeしてからプログラムを終了する仕様にするなど、こちらもメモリの扱いが難しかったです。</li>
+									</ul>
+								</div>
+							</div>
+							</div>
+						</div><!-- /.modal -->
+						
+					</div>   
+					<div class="list-item">
+						<a href= "#" class="display" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+						<img src="../images/b2b.jpg" class="image">
+						<span>VirtualBox/Linux</span>
+						<div class="text">
+							<p>VirtualBoxを用いた仮想マシン制作</p>
+						</div>
+						</a>
+						
+						<!-- モーダルの設定 -->
+						<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel">
+							<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+								<h1 class="modal-title fs-5" id="exampleModalLabel">born2beroot</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="閉じる"></button>
+								</div>
+								<div class="modal-body">
+									<h5>概要</h5>
+									<p>VirtualBoxを用いて仮想マシンを制作しました。Linux系OSのDebianをインストールし、sudo,sshなどの設定や強力なパスワードポリシーの設定などをしました。</p>
+									<h5><br>学んだことなど</h5>
+									<ul>
+										<li>rootユーザー、su、sudoコマンドについて理解が深まりました。</li>
+										<li>sshやファイアウォールの設定を通して、ポートについて学びました。</li>
+										<li>コマンドを使った、CPUの使用率やメモリの使用率、サーバーのMACアドレスなどの情報の取得方法を学びました。</li>
+									</ul>
+								</div>
+							</div>
+							</div>
+						</div><!-- /.modal -->
+						
+					</div>   
+                </div>
+			</div>
+		</div>
+	</div>
+	<!-- //WORKS -->
+	<!-- FOOTER-->
+    <footer class="footer">
+		<div class="container">
+			<div class="content">
+				<div class="icon">
+					<a href="mailto:rihs14804@gmail.com">
+						<i class="bi bi-envelope-heart-fill"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/riho-shimaoka-7a2103245/" target="_blank">
+						<i class="bi bi-linkedin"></i>
+					</a>
+					<a href="https://github.com/riho8" target="_blank">
+						<i class="bi bi-github"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- // FOOTER -->
+
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+@font-face {
+	font-family: 'phenomena-bold'; 
+	src: url('../fonts/Phenomena-Black.otf') format('truetype');
+}
+
+
+/*---------------------------------
+　HEADER
+---------------------------------*/
+/* container */
+.header{
+    width:100%;
+}
+.header .container{
+    max-width:1000px;
+    margin:0px auto;
+    padding:80px 0px 25px 0px;
+}
+/* content */
+.container-fluid{
+	font-family: 'phenomena-bold',sans-serif;
+}
+
+.navbar-brand{
+	font-size:50px;
+}
+
+.navbar-nav{
+	font-size:30px;
+}
+
+.header i{
+	font-size: 30px;
+	margin:4px 3px 0px 3px;
+}
+
+/*---------------------------------
+　ABOUT
+---------------------------------*/
+/* container */
+.about{
+    width:100%;
+  
+}
+.about .container{
+    max-width:1000px;
+    margin:0px auto;
+    padding:80px 0px;
+}
+/* content */
+
+.about .container .content {
+    display: flex;
+}
+
+.about .content-item {
+    width:100%;
+}
+
+.about .image{
+    max-width:70%;
+}
+.about .heading{
+    font-size: 24px;
+}
+/* .about .text{
+    text-align: center;
+} */
+.about .contact{
+	font-family:"phenomena-bold",sans-serif;
+	text-align: right;
+}
+/*---------------------------------
+　FOOTER
+---------------------------------*/
+/* container */
+.footer{
+    width:100%;
+}
+.footer .container{
+    max-width:1000px;
+    margin:0px auto;
+    padding:40px 0px;
+    border-top: 1px solid rgb(184, 181, 181);
+}
+/* content */
+.footer .content{
+	text-align: center;
+}
+.footer i{
+	color:black;
+	font-size: 25px;
+	text-align: center;
+	margin:0 10px;
+}

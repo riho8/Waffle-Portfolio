@@ -1,0 +1,28 @@
+@font-face {
+	font-family: 'phenomena-black'; 
+	src: url('../fonts/Phenomena-Black.otf') format('truetype');
+  }
+
+/*---------------------------------
+　BODY
+---------------------------------*/
+body{
+
+    height: 550px;
+    background-color: lightgray;
+}
+
+h1 {
+	font-family: 'phenomena-black', sans-serif;
+	font-size :150px;
+	text-align: center;
+	padding-top: 225px;
+}
+
+button {
+	font-family: 'phenomena-black', sans-serif;
+	font-size:80px;
+	/*pxじゃなくてautoとかで画面の大きさに合わせて指定したい */
+	margin-left:1300px; 
+	margin-top:120px;
+}

@@ -1,0 +1,143 @@
+@font-face {
+	font-family: 'phenomena-black'; 
+	src: url('../fonts/Phenomena-Black.otf') format('truetype');
+}
+
+@font-face {
+	font-family: 'phenomena-bold'; 
+	src: url('../fonts/Phenomena-Bold.otf') format('truetype');
+}
+
+/*---------------------------------
+　HEADER
+---------------------------------*/
+/* container */
+.header{
+    width:100%;
+}
+.header .container{
+    max-width:1000px;
+    margin:0px auto;
+    padding:80px 0px 25px 0px;
+}
+/* content */
+.container-fluid{
+	font-family: 'phenomena-black',sans-serif;
+}
+
+.navbar-brand{
+	font-size:50px;
+}
+
+.navbar-nav{
+	font-size:30px;
+}
+
+.header i{
+	font-size: 30px;
+	margin:4px 3px 0px 3px;
+}
+
+/*---------------------------------
+　WORKS
+---------------------------------*/
+/* container */
+.works{
+    width:100%;
+}
+.works .container{
+    max-width:1000px;
+    margin:0px auto;
+    padding:25px 0px;
+}
+/* content */
+.works .content{
+	padding-bottom:20px;
+	
+}
+.works .heading{
+	border-bottom:2px solid rgb(184, 181, 181);
+}
+.works .navbar-nav{
+	font-family: 'phenomena-bold',sans-serif;
+	font-size: 25px;
+}
+.works .nav-item{
+	margin:0px 50px;
+}
+
+.works .description{
+	margin:50px 0px;
+}
+
+.works blockquote {
+	margin: 20px;
+	border-left: 2px solid gray;
+	padding: 0 15px;
+}
+
+.list {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+.list-item {
+    padding:0px 30px; 
+    text-align:center;
+	margin:0px;
+    width:calc(100% / 3);
+}
+
+
+.list-item .display{
+	padding-bottom:50px;
+	/* リンクの装飾なくす */
+	text-decoration:none; 
+	color:black;
+}
+
+.list-item .image{
+	width:100%;
+    margin-bottom: 20px; 
+}
+.list-item span{
+	font-size:20px;
+	font-family: 'phenomena-bold',sans-serif;
+    color:#666666;
+}
+.list-item .text{
+	font-size:19px;
+    padding-bottom:50px;
+}
+
+.modal-body {
+	text-align: left;
+}
+
+
+
+/*---------------------------------
+　FOOTER
+---------------------------------*/
+/* container */
+.footer{
+    width:100%;
+}
+.footer .container{
+    max-width:1000px;
+    margin:0px auto;
+    padding:40px 0px;
+	border-top: 1px solid rgb(184, 181, 181);
+}
+/* content */
+.footer .content{
+	text-align: center;
+}
+.footer i{
+	color:black;
+	font-size: 25px;
+	text-align: center;
+	margin:0 10px;
+}
